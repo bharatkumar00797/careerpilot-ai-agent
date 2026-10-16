@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CareerPilot - personal AI career agent</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>CareerPilot</h1>
+      <p class="tag">Fit score, skill gaps, interview prep, and a tailored application package.</p>
+    </div>
+    <div class="meta"><span id="mode" class="pill">loading...</span> <a href="/docs">API docs</a></div>
+  </header>
+  <div id="banner" class="banner" hidden role="status">
+    Simulated public demo — packaged profiles/jobs and the offline mock provider only.
+  </div>
+  <main>
+    <section class="panel" id="setup">
+      <h2>1. Choose profile and job</h2>
+      <div class="row">
+        <label>Profile <select id="profile"></select></label>
+        <label>Job <select id="job"></select></label>
+        <label id="key-wrap" hidden>API key <input id="apikey" type="password" autocomplete="off"></label>
+      </div>
+      <p id="profile-hint" class="hint"></p>
+      <p id="job-hint" class="hint"></p>
+      <details id="custom-wrap" hidden>
+        <summary>Custom profile + job (JSON)</summary>
+        <label>Profile JSON
+          <textarea id="custom-profile" rows="8" spellcheck="false"
+            placeholder='{"name": "...", "headline": "...", ...}'></textarea>
+        </label>
+        <label>Job JSON
+          <textarea id="custom-job" rows="8" spellcheck="false"
+            placeholder='{"title": "...", "company": "...", ...}'></textarea>
+        </label>
+      </details>
+      <button id="run" type="button">Analyze fit</button>
+      <span id="status" class="status" role="status"></span>
+    </section>
+
+    <section class="panel" id="result" hidden>
+      <h2>2. Career brief</h2>
+      <div id="headline" class="headline"></div>
+      <div class="tabs" role="tablist">
+        <button type="button" data-tab="overview" class="active">Overview</button>
+        <button type="button" data-tab="gaps">Gaps</button>
+        <button type="button" data-tab="interview">Interview</button>
+        <button type="button" data-tab="application">Application</button>
+        <button type="button" data-tab="brief">Markdown</button>
+      </div>
+      <div id="tab-overview" class="tab">
+        <div id="progress" class="progress"></div>
+        <div id="skills" class="skills"></div>
+        <div id="flags" class="flags"></div>
+      </div>
+      <div id="tab-gaps" class="tab" hidden><div id="gaps"></div></div>
+      <div id="tab-interview" class="tab" hidden><div id="interview"></div></div>
+      <div id="tab-application" class="tab" hidden><div id="application"></div></div>
+      <div id="tab-brief" class="tab" hidden>
+        <div class="row">
+          <button type="button" id="copy">Copy Markdown</button>
+          <button type="button" id="download">Download .md</button>
+        </div>
+        <pre id="brief" class="brief"></pre>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Recent analyses</h2>
+      <ul id="history" class="history"></ul>
+    </section>
+  </main>
+  <footer>Open source &middot; MIT &middot; offline mock provider by default</footer>
+</body>
+</html>
