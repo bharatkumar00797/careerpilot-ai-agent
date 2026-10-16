@@ -27,7 +27,7 @@ def test_build_provider_defaults_to_mock() -> None:
 
 def test_build_provider_rejects_unknown() -> None:
     with pytest.raises(ValueError, match="unknown provider"):
-        build_provider(Settings(provider="anthropic"))
+        build_provider(Settings(provider="not-a-provider"))
 
 
 def test_openai_compat_rejects_plain_http_non_local() -> None:
