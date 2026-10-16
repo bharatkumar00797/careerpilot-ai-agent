@@ -4,9 +4,8 @@
 description into a fit score with evidence, a skill-gap plan, an interview prep
 pack, and a tailored application package.
 
-> Session 1 ships the core engine, CLI, offline mock provider, and packaged
-> demos. FastAPI dashboard, deploy configs, and the full docs land in later
-> sessions. Status badges and the deep README arrive with the 1.0.0 release.
+> Core engine + CLI + offline mock provider + FastAPI dashboard and multi-platform
+> deploy configs. Status badges and the deep README arrive with the 1.0.0 release.
 
 ## Quick start (offline)
 
@@ -19,6 +18,18 @@ careerpilot analyze ml-engineer ml-platform
 ```
 
 The default provider is a deterministic offline mock — no API keys required.
+
+## HTTP API + dashboard
+
+```bash
+careerpilot serve --dev
+# open http://127.0.0.1:8000
+```
+
+- `POST /api/analyze` — sync (200) or async (202) career brief
+- `GET /api/analyze/{id}` / `.../events` / `.../brief.md`
+- `GET /api/profiles`, `GET /api/jobs`, `GET /api/config`, `/healthz`, `/docs`
+- Access modes: API-key / dev / public-demo (packaged demos + mock only)
 
 ## What it produces
 
@@ -39,6 +50,11 @@ The default provider is a deterministic offline mock — no API keys required.
   `<untrusted-profile>` / `<untrusted-job>` with delimiter look-alikes defanged.
 - **Pluggable LLM.** `mock` (default) | `openai` | `groq` | `ollama` via
   `CAREERPILOT_*` env vars.
+
+## Deploy
+
+Docker / Compose / Render / Fly / Railway / Vercel configs ship in the repo root.
+See `.env.example` for every `CAREERPILOT_*` service variable.
 
 ## License
 
