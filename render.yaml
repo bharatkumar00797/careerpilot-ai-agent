@@ -1,0 +1,21 @@
+# Render Blueprint: https://render.com/docs/blueprint-spec
+# Deploys the Docker image as a public demo: packaged profiles/jobs and the offline mock provider.
+# To lock it down or use a real LLM, add CAREERPILOT_API_KEYS (and CAREERPILOT_PROVIDER,
+# CAREERPILOT_API_KEY, ...) as secret environment variables in the Render dashboard.
+services:
+  - type: web
+    name: careerpilot-ai-agent
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: CAREERPILOT_PROVIDER
+        value: mock
+      # Render's proxy appends the real client IP to X-Forwarded-For (per-client rate limits)
+      - key: CAREERPILOT_TRUST_PROXY
+        value: "true"
+      - key: CAREERPILOT_MAX_CONCURRENT_RUNS
+        value: "1"
