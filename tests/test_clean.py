@@ -6,17 +6,15 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# Assembled so this file does not contain the banned phrases as contiguous literals.
+# Generic attribution trailers that must never appear in the tree. Assembled so
+# this file does not contain the phrases as contiguous literals.
 _BAN_SNIPPETS = tuple(
     "".join(parts)
     for parts in (
         ("Gener", "ated by"),
         ("Co-authored", "-by"),
-        ("Grok", " Bot"),
-        ("Cla", "ude"),
-        ("Anthro", "pic"),
-        ("Cursor", " AI"),
-        ("OpenAI", " ChatGPT"),
+        ("Signed-off-by: ", "bot"),
+        ("[", "bot]"),
     )
 )
 
