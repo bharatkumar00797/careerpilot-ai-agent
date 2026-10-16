@@ -1,0 +1,50 @@
+{
+  "name": "Asha Patel",
+  "headline": "Mid-level ML Engineer with backend and platform experience",
+  "summary": "Builds production ML services and data pipelines. Comfortable with Python, PyTorch, FastAPI, PostgreSQL, Docker, and CI/CD. Interested in ML platform and backend-leaning roles.",
+  "experiences": [
+    {
+      "title": "Machine Learning Engineer",
+      "company": "Nimbus Analytics",
+      "start": "2022",
+      "end": null,
+      "bullets": [
+        "Shipped a document-classification service in PyTorch served behind FastAPI",
+        "Cut inference p95 latency 35% by batching and ONNX export",
+        "Owned feature store sync jobs into PostgreSQL with monitored SLAs"
+      ]
+    },
+    {
+      "title": "Backend Engineer",
+      "company": "Riverbank Systems",
+      "start": "2019",
+      "end": "2022",
+      "bullets": [
+        "Built REST APIs in Python for billing and entitlements",
+        "Containerised services with Docker and GitHub Actions CI",
+        "Added structured logging and basic Prometheus metrics"
+      ]
+    }
+  ],
+  "skills": [
+    {"name": "Python", "level": 5},
+    {"name": "PyTorch", "level": 4},
+    {"name": "Machine Learning", "level": 4},
+    {"name": "FastAPI", "level": 4},
+    {"name": "PostgreSQL", "level": 3},
+    {"name": "SQL", "level": 4},
+    {"name": "Docker", "level": 4},
+    {"name": "CI/CD", "level": 3},
+    {"name": "REST", "level": 4},
+    {"name": "Large Language Models", "level": 3},
+    {"name": "Kubernetes", "level": 2}
+  ],
+  "education": [
+    {"school": "State Institute of Technology", "degree": "B.Tech Computer Science", "year": "2019"}
+  ],
+  "target_roles": [
+    "Machine Learning Engineer",
+    "ML Platform Engineer",
+    "Backend Engineer"
+  ]
+}

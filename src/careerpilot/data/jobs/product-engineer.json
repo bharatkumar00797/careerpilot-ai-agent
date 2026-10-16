@@ -1,0 +1,19 @@
+{
+  "title": "Product Engineer",
+  "company": "Brightlane",
+  "location": "Remote",
+  "requirements": [
+    "TypeScript",
+    "React",
+    "Product Management",
+    "PostgreSQL",
+    "Leadership",
+    "System Design"
+  ],
+  "nice_to_haves": [
+    "Python",
+    "FastAPI",
+    "CI/CD"
+  ],
+  "description": "Join Brightlane as a Product Engineer who can shape roadmap and ship the UI/API surface. You will write TypeScript/React, partner with design, and occasionally dive into PostgreSQL and service design."
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Jordan Lee",
+  "headline": "Full-stack engineer with product ownership experience",
+  "summary": "Ships product features across React/TypeScript frontends and Python APIs. Has led scoping workshops, written PRDs, and partnered with design on B2B workflows.",
+  "experiences": [
+    {
+      "title": "Senior Full-Stack Engineer",
+      "company": "Harbor Apps",
+      "start": "2021",
+      "end": null,
+      "bullets": [
+        "Delivered a React + TypeScript dashboard used by 200 B2B customers",
+        "Owned FastAPI services for workflow automation and auth",
+        "Ran fortnightly product reviews and wrote one-pager PRDs"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Parcelly",
+      "start": "2018",
+      "end": "2021",
+      "bullets": [
+        "Built Node.js and PostgreSQL services for shipment tracking",
+        "Introduced CI/CD pipelines and end-to-end Playwright checks",
+        "Partnered with support to triage top customer pain points"
+      ]
+    }
+  ],
+  "skills": [
+    {"name": "TypeScript", "level": 5},
+    {"name": "React", "level": 5},
+    {"name": "Python", "level": 4},
+    {"name": "FastAPI", "level": 3},
+    {"name": "Node.js", "level": 4},
+    {"name": "PostgreSQL", "level": 4},
+    {"name": "SQL", "level": 4},
+    {"name": "Product Management", "level": 3},
+    {"name": "CI/CD", "level": 4},
+    {"name": "Docker", "level": 3},
+    {"name": "Leadership", "level": 3}
+  ],
+  "education": [
+    {"school": "Coastal University", "degree": "B.S. Software Engineering", "year": "2018"}
+  ],
+  "target_roles": [
+    "Product Engineer",
+    "Full-Stack Engineer",
+    "Engineering Manager"
+  ]
+}

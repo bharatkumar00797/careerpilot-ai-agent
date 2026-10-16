@@ -1,0 +1,20 @@
+{
+  "title": "ML Platform Engineer",
+  "company": "VectorForge",
+  "location": "Hybrid - Bengaluru",
+  "requirements": [
+    "Python",
+    "Machine Learning",
+    "PyTorch",
+    "Docker",
+    "Kubernetes",
+    "FastAPI",
+    "CI/CD"
+  ],
+  "nice_to_haves": [
+    "Large Language Models",
+    "PostgreSQL",
+    "Observability"
+  ],
+  "description": "Own the training and serving platform for VectorForge models. Expect to harden FastAPI model services, improve cluster utilisation on Kubernetes, and partner with research on PyTorch workflows."
+}

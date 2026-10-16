@@ -1,0 +1,19 @@
+{
+  "title": "Senior Backend Engineer",
+  "company": "Northwind Cloud",
+  "location": "Remote",
+  "requirements": [
+    "Python",
+    "PostgreSQL",
+    "REST",
+    "Docker",
+    "System Design",
+    "CI/CD"
+  ],
+  "nice_to_haves": [
+    "Kubernetes",
+    "AWS",
+    "Observability"
+  ],
+  "description": "Build and operate backend services that power Northwind Cloud's multi-tenant platform. You will design APIs, own data models in PostgreSQL, and raise the reliability bar with solid CI/CD and observability."
+}
